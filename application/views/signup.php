@@ -11,7 +11,7 @@
                 Email:   <input type="text" name="email"> <br /> 
                 <input type="submit" name="submit" value="submit" />
                 <br /><br />
-                Already logged in? <a href="/welcome">Sign-in here</a> </form>
+                Already registered? <a href="/welcome">Sign-in here</a> </form>
                     </div>
 
                 
