@@ -9,14 +9,16 @@ class Mod_blogs extends \RESTAPI\Model {
 	//for limiting and pagination of results
 	$this->limit = DATABASE_DEFAULT_LIMIT;
 	$this->max = DATABASE_MAX;
-	$this->offset = 0;        //don't show this fields
-        //for limiting and pagination of results
-        $this->limit = DATABASE_DEFAULT_LIMIT;
-        $this->max = DATABASE_MAX;
-        $this->offset = 0;
+	$this->offset = 0; 
     }
     
     public function get_blogs($id = '') {
-        return $this->query("select * from blogs LIMIT ".$this->offset.", ".$this->limit);
+        $result = $this->query("select * from blogs LIMIT ".$this->offset.", ".$this->limit);
+	if (0 < count($result)){
+		return $result;
+	}
+	else{
+		return false;
+	}
     }
 }

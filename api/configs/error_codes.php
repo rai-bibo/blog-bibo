@@ -18,7 +18,7 @@ $codes = array(
         'http' => 403
     ),
     404 => array(
-        'message' => 'Resource not found.',
+        'message' => '',
         'documentation' => '',
         'http' => 404
     ),

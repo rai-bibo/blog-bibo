@@ -53,7 +53,7 @@ class Model {
                 ++$ctr;
             }
             if (count($rows) <= 0)
-            $this->errorhandling(8004);
+            header("HTTP/1.1 404 Not Found");
         }
         else
         $rows = $result;

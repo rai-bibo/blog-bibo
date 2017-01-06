@@ -27,7 +27,7 @@ class Blogs extends \RESTAPI\Loader implements iRestserver {
         if ($data != '')
         $this->response_generator($data, strtolower(__CLASS__));
         else
-        $this->errorhandling(404);
+        return false;
     }
 
     public function post() {
