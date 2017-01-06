@@ -5,7 +5,7 @@ class Users extends \RESTAPI\Loader implements iRestserver {
         $this->library(array('form', 'client_settings', 'authentication'));
         $this->model(array('mod_users', 'mod_groups'));
         //require this resource to be authenticated first
-        $this->authentication->sentry();
+#        $this->authentication->sentry();
     }
     /**
      * GET data from this resource

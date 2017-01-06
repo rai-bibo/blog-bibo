@@ -41,7 +41,7 @@ class Model {
     
     protected function query($query) {
         $this->connect();
-        $rows = '';
+        $rows = array();
         if(isset($this->fields))
         $this->field_check();
         $result = $this->mysqli->query($query);
